@@ -1,0 +1,27 @@
+API on :4000
+AggregateError [ECONNREFUSED]: 
+    at C:\Users\CHRITOPHER\Desktop\Intramural_Sports\Server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CHRITOPHER/Desktop/Intramural_Sports/Server/src/routes/sports.js:9:20 {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5012
+        at createConnectionError (node:net:1686:14)
+        at afterConnectMultiple (node:net:1716:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5012
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5012
+        at createConnectionError (node:net:1686:14)
+        at afterConnectMultiple (node:net:1716:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5012
+    }
+  ]
+}
